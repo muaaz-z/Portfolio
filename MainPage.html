@@ -1,0 +1,261 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- AOS for Scroll Animations -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            background-image: url('file:///C:/Users/Mz/Desktop/Desktop%20-%203.png');
+            background-size: cover;
+            background-position: center;
+            color: #333; 
+        }
+
+        .header, .footer {
+            background-color: transparent;
+            color: black; 
+            text-align: center;
+            padding: 20px;
+            border-bottom: 3px solid black; 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .footer {
+            border-top: 3px solid black;
+        }
+
+        .content-area {
+            flex-grow: 1;
+            display: flex;
+            border: 3px solid black;
+            border-radius: 8px;
+            margin: 20px;
+        }
+
+        .sidebar {
+            background-color: transparent;
+            padding: 20px;
+            width: 20%;
+            border-right: 3px solid black;
+            border-radius: 8px 0 0 8px;
+        }
+
+        .main-content {
+            padding: 20px;
+            width: 80%;
+            background-color: transparent; 
+            color: black;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .link-list a {
+            display: block;
+            margin-bottom: 15px;
+            font-size: 18px;
+            color: white; 
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .link-list a:hover {
+            color: #007bff;
+        }
+
+        .link-list a i {
+            margin-right: 8px;
+            color: #007bff;
+        }
+
+        .sidebar img {
+            width: 100%;
+            margin-top: 20px;
+            border-radius: 8px;
+            border: 3px solid black;
+        }
+
+        .main-content h2 {
+            color: #007bff;
+        }
+
+        .main-content p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: white; 
+        }
+
+        .footer img {
+            max-width: 100%;
+            height: 75px;
+            object-fit: cover;
+            margin-top: 8px;
+            border: 3px solid black;
+            border-radius: 6px;
+        }
+
+        .parallax {
+            background-image: url('file:///C:/Users/Mz/Desktop/Group%205.png');
+            min-height: 400px;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+        }
+
+        .parallax-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: black;
+            text-align: center;
+        }
+        
+        .skills-section h2 {
+            color: white; 
+        }
+        .skills-section {
+            background-color: black; 
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .skills-bar {
+            background-color: #007bff;
+            height: 20px;
+            width: 80%;
+            margin: 10px auto;
+            border-radius: 5px;
+        }
+        .testimonials-section h2 {
+            color: white; 
+        }
+        .testimonials-section {
+            background-color: black; 
+            padding: 40px 20px;
+            color: #333;
+            text-align: center;
+        }
+
+        .testimonial {
+            margin: 20px 0;
+            color: #007bff;
+        }
+
+        .social-links {
+            margin-top: 20px;
+        }
+
+        .social-links a {
+            color: #007bff; 
+            margin: 0 10px;
+            font-size: 24px;
+        }
+
+        .social-links a:hover {
+            color: #0056b3; 
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <div class="header">
+        <img src="file:///C:/Users/Mz/Desktop/Desktop%20-%204.png" alt="MZ Left Image" style="width: 200px; margin-right: 30px;">
+        <h1>PORTFOLIO</h1>
+        <img src="file:///C:/Users/Mz/Desktop/Desktop%20-%204.png" alt="MZ Right Image" style="width: 200px; margin-left: 30px;">
+    </div>
+
+    <!-- Parallax Section -->
+    <div class="parallax" data-aos="fade-in">
+        <div class="parallax-content">
+            <h2>Welcome to My Portfolio</h2> <!-- Text color is now black -->
+            <p>Exploring technology, coding, and more.</p>
+        </div>
+    </div>
+
+    <!-- Skills Section -->
+    <div class="skills-section" data-aos="fade-up">
+        <h2>My Skills</h2>
+        <div class="skills-bar" style="width: 90%;">HTML/CSS - 90%</div>
+        <div class="skills-bar" style="width: 75%;">JavaScript - 75%</div>
+        <div class="skills-bar" style="width: 85%;">Python - 85%</div>
+    </div>
+
+    <!-- Main Content Area -->
+    <div class="content-area">
+        <div class="sidebar">
+            <div class="link-list">
+                <a href="C:\Users\Mz\Desktop\MainPage.html"><i class="fas fa-home"></i> HOME</a>
+                <a href="C:\Users\Mz\Desktop\ProjectPage.html"><i class="fas fa-tasks"></i> PROJECTS</a>
+                <a href="C:\Users\Mz\Desktop\CV Page.html"><i class="fas fa-tasks"></i> CV</a>
+                <a href="C:\Users\Mz\Desktop\Contact Page.html"><i class="fas fa-envelope"></i> CONTACT</a>
+            </div>
+            <img src="file:///C:/Users/Mz/Downloads/IMG_8929.PNG" alt="Image of Muaaz">
+        </div>
+        <div class="main-content">
+            <h2>About Me</h2>
+            <p>Hello! My name is Muaaz Zulafiqar, and I’m thrilled to have you here. Currently, I’m pursuing my bachelor's degree in Computer Science at FCCU, where I have just embarked on my 5th semester. My journey in the world of technology and coding has been both challenging and rewarding, and I am eager to learn and grow further in this field.  
+    In addition to my academic pursuits, I have a diverse range of interests that help shape my personality. I’m an avid football enthusiast, and I enjoy both playing and watching the game. Whether it’s playing with friends or supporting my favorite teams, football is a significant part of my life. I also have a passion for squash, a sport that keeps me active and sharpens my competitive edge.  
+    Gaming is another one of my great passions. I love immersing myself in various video games, as they provide a fantastic way to relax and connect with friends. The strategic elements of gaming often inspire my coding projects, pushing me to think creatively and solve problems in innovative ways.  
+    Coding itself is a major focus for me. I enjoy experimenting with different programming languages and technologies, always eager to develop new skills and projects. From web development to software engineering, I find great satisfaction in transforming ideas into functional code.  
+    Thank you for visiting my portfolio! I invite you to explore my work and projects, and feel free to reach out if you would like to connect or collaborate.</p>
+        </div>
+    </div>
+
+    <!-- Testimonials Section -->
+    <div class="testimonials-section" data-aos="fade-up">
+        <h2>What People Say</h2>
+        <div class="testimonial">
+            <p>"Muaaz is a hardworking and dedicated developer. His work on our project was outstanding!"</p>
+            <h4>- My Mom</h4>
+        </div>
+        <div class="testimonial">
+            <p>"A talented coder with a passion for gaming and development. Always innovative!"</p>
+            <h4>- My Dad</h4>
+        </div>
+    </div>
+
+    <!-- Social Links -->
+    <div class="footer" data-aos="fade-up">
+        <img src="file:///C:/Users/Mz/Desktop/Desktop%20-%202.png" alt="Image of Muaaz in Footer">
+    <div class="social-links">
+        <a href="https://www.linkedin.com/in/muaaz-zulfiqar-19b3ab258/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/your-profile" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://twitter.com/your-profile" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://instagram.com/your-profile" target="_blank"><i class="fab fa-instagram"></i></a>
+</div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- AOS JS for Animations -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+</html>
